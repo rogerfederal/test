@@ -1,148 +1,140 @@
-﻿port: 7890
+port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 印度阿伟科技-油管, server: 52.140.123.35, port: 80, type: vmess, uuid: 5401fcb0-2899-4c05-8eee-1728b8a1affc, alterId: 4, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 52.140.123.35}, udp: true}
-  - {name: 台湾, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 【VIP2】美国UA 04_22, server: niaocloud-gy.niaoyun.online, port: 8204, type: vmess, uuid: 19435e23-43c3-3ede-9bbb-c1ab747fc8be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/news, ws-headers: {Host: niaocloud-gy.niaoyun.online}, udp: true}
-  - {name: _美国_(YouTube：VV科技)+TG：t.me/vvkj11_73, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
-  - {name: NL_131, server: 89.31.127.151, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: NL_134, server: 89.31.127.151, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: 【VIP1】日本JP 04, server: niaocloud-gy.niaoyun.online, port: 3004, type: vmess, uuid: 19435e23-43c3-3ede-9bbb-c1ab747fc8be, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/news, ws-headers: {Host: www.msn.cn}, udp: true}
-  - {name: RO_791, server: 62.216.92.180, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: 【VIP2】新加坡SG 01_13, server: niaocloud-gy.niaoyun.online, port: 6101, type: vmess, uuid: 19435e23-43c3-3ede-9bbb-c1ab747fc8be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/news, ws-headers: {Host: niaocloud-gy.niaoyun.online}, udp: true}
-  - {name: _中国跳转_（欢迎订阅YouTube：VV科技）_80, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "|19.27Mb", server: 178.62.224.119, port: 8888, type: vmess, uuid: aeaaff19-bb0b-434d-b206-0f2a3f4d90e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 178.62.224.119}, udp: true}
-  - {name: Relay_-🇨🇦CA_21, server: t3.ssrsub.com, port: 156, type: trojan, password: 1c356475-9d2e-4b35-b05a-95517756e7a5, sni: t3.ssrsub.com, skip-cert-verify: true, udp: true}
-  - {name: US_1523, server: 38.75.136.93, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 【VIP1】香港HK 04, server: niaocloud-gy.niaoyun.online, port: 4004, type: vmess, uuid: 19435e23-43c3-3ede-9bbb-c1ab747fc8be, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/news, ws-headers: {Host: www.msn.cn}, udp: true}
-  - {name: CYL-科技（2022.01.09）_9, server: in02.2333dns.com, port: 64068, type: vmess, uuid: 19380563-e9f4-367a-b58f-43def434398e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /video, ws-headers: {Host: in02.2333dns.com}, udp: true}
-  - {name: "美国[感谢订阅——科技网络]", server: amu1ahfi.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: amu1ahfi.com}, udp: true}
-  - {name: _US_美国, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}, udp: true}
-  - {name: US_1680, server: 167.88.61.60, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 【VIP1】香港HK 01_9, server: niaocloud-gy.niaoyun.online, port: 4001, type: vmess, uuid: 19435e23-43c3-3ede-9bbb-c1ab747fc8be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/news, ws-headers: {Host: niaocloud-gy.niaoyun.online}, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_279, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_TG@nodesharing_803, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国阿伟科技-油管, server: fa8.uuv2.co.uk, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _美国_(YouTube：VV科技)+TG：t.me/vvkj11_9, server: amu1ahfi.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: amu1ahfi.com}, udp: true}
-  - {name: 【VIP2】美国UA 03, server: niaocloud-gy.niaoyun.online, port: 8203, type: vmess, uuid: 19435e23-43c3-3ede-9bbb-c1ab747fc8be, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/news, ws-headers: {Host: www.msn.cn}, udp: true}
-  - {name: Ytb:鹏哥分享_NL_荷兰_21, server: 178.62.224.119, port: 8888, type: vmess, uuid: b85b6cbb-ec13-41c6-ba97-52ad48d63c5c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 178.62.224.119}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_143, server: 66.55.92.101, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW, udp: true}
-  - {name: _US_美国 2, server: 209.58.139.41, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}, udp: true}
-  - {name: 美国阿伟科技-油管 2, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _美国_(YouTube：VV科技)+TG：t.me/vvkj11_65, server: usa-sanfrancisco.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}, udp: true}
-  - {name: _US_美国 3, server: usa-sanfrancisco.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}, udp: true}
-  - {name: _83, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 8, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 【VIP1】香港HK 03, server: niaocloud-gy.niaoyun.online, port: 4003, type: vmess, uuid: 19435e23-43c3-3ede-9bbb-c1ab747fc8be, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/news, ws-headers: {Host: www.msn.cn}, udp: true}
-  - {name: 美国 4_63, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国绿头外网集团Public_270, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_156, server: 167.88.61.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: a 38, server: 104.19.107.102, port: 443, type: vmess, uuid: 24b4b1e1-7a89-45f6-858c-242cf53b5bdb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vmess, ws-headers: {Host: morning-mud-2d55.tianzhen169.workers.dev}, udp: true}
-  - {name: _美国_(YouTube：VV科技)+TG：t.me/vvkj11_79, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: iesei1ei.com}, udp: true}
-  - {name: US_1994 |81.26Mb, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1721, server: 167.88.61.60, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_150, server: 167.88.61.60, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_1696, server: 167.88.61.60, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 俄罗斯阿伟科技-油管, server: ruwx.jjyun.biz, port: 8880, type: vmess, uuid: 7224175a-5f3e-4f29-aff8-d185363e5853, alterId: 10, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jjyun, ws-headers: {Host: ruwx.jjyun.biz}, udp: true}
-  - {name: -美国-c23s3.jamjams.net_223, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CYL-科技（2022.01.09）_17, server: 204.44.75.162, port: 80, type: vmess, uuid: 5002a71b-d203-3a1d-987f-99522eccdc25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 204.44.75.162}, udp: true}
-  - {name: 美国 126, server: 198.41.212.154, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
-  - {name: 華人社區_經紀人CC🌸🌸_194, server: v9.ssrsub.com, port: 8443, type: vmess, uuid: 1c356475-9d2e-4b35-b05a-95517756e7a5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v9.ssrsub.com}, udp: true}
-  - {name: default_name, server: cloudflare-ip.a-yu.xyz, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: sg1.a-yu.xyz}, udp: true}
-  - {name: US_1690, server: 167.88.61.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72, server: 104.24.160.31, port: 80, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
-  - {name: 華人社區_經紀人CC🌸🌸_203, server: v9.ssrsub.com, port: 8443, type: vmess, uuid: e6c36d58-6070-4b55-a437-146e6b53ec57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v9.ssrsub.com}, udp: true}
-  - {name: US_166, server: 167.88.61.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: Ytb:鹏哥分享_HU_匈牙利_5, server: 185.252.223.204, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/261411191011, ws-headers: {Host: www.16675463.xyz}, udp: true}
-  - {name: US_191, server: 167.88.61.60, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_190 TG@peekfun, server: 72.167.45.6, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: 華人社區_經紀人CC🌸🌸_202, server: v8.ssrsub.com, port: 443, type: vmess, uuid: e6c36d58-6070-4b55-a437-146e6b53ec57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
-  - {name: US_1981 |44.09Mb, server: c23s801.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1654, server: 167.88.61.60, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 167.88.61.60:3306, server: 167.88.61.60, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 4, server: 172.67.197.254, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}, udp: true}
-  - {name: ZZ_233, server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_169 TG@peekfun, server: 72.167.45.6, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: US_172 TG@peekfun, server: 72.167.45.6, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
-  - {name: Ytb:鹏哥分享_HU_匈牙利_4, server: 185.252.223.204, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/243535322906, ws-headers: {Host: www.16675463.xyz}, udp: true}
-  - {name: ZZ_2218, server: 169.197.142.39, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 5, server: www.ltzs.buzz, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}, udp: true}
-  - {name: ZZ_2190, server: 169.197.142.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_180 TG@peekfun, server: 38.75.136.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_1698, server: 167.88.61.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: ZZ_232, server: 169.197.142.39, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ZZ_247, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_217 TG@peekfun, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_182, server: 38.75.136.93, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CYL-科技（2022.01.09）_31, server: c23s801.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1666, server: 167.88.61.60, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国 103, server: 169.197.142.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: "| 9.79Mb", server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shuier, ws-headers: {Host: xc1.v2rie.pp.ua}, udp: true}
-  - {name: ZZ_2199, server: 169.197.142.39, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ_2209, server: 169.197.142.39, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_153 TG@peekfun, server: 38.75.136.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 38.75.136.93:443, server: 38.75.136.93, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_184 TG@peekfun, server: 38.75.136.93, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: ZZ_231, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US_176 TG@peekfun, server: 38.75.136.93, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_160, server: 107.182.234.233, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV, udp: true}
-  - {name: 美国 137, server: 104.16.181.197, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
-  - {name: 38.75.136.93:8080, server: 38.75.136.93, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1524, server: 38.75.136.93, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国 058, server: us07.vip-v2ray.cf, port: 58740, type: vmess, uuid: 4ca67d33-f626-47ba-e077-0ff6742fc31c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1210, server: 70.39.71.2, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV, udp: true}
-  - {name: AU_20 TG@peekfun, server: 172.105.180.227, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 華人社區_經紀人CC🌸🌸_532, server: 107.182.234.233, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV, udp: true}
-  - {name: FR_92 TG@peekfun, server: 37.120.136.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Xd2xnHT8tYkVt5BDk92b, udp: true}
-  - {name: 美国 127, server: 142.4.105.253, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 142.4.105.253}, udp: true}
-  - {name: US_186 TG@peekfun, server: 38.75.136.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 37.120.137.82:8389, server: 37.120.137.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS, udp: true}
-  - {name: US_156 TG@peekfun, server: 70.39.71.2, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV, udp: true}
-  - {name: 【VIP1】香港HK 02, server: niaocloud-gy.niaoyun.online, port: 4002, type: vmess, uuid: 19435e23-43c3-3ede-9bbb-c1ab747fc8be, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/news, ws-headers: {Host: www.msn.cn}, udp: true}
-  - {name: 172.105.180.227:5001, server: 172.105.180.227, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_180, server: 38.143.66.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_1156, server: 38.75.136.93, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_181 TG@peekfun, server: 167.88.61.60, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_185 TG@peekfun, server: 38.75.136.93, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_177 TG@peekfun, server: 38.75.136.93, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _US_美国 6, server: ua1.uuv2.co.uk, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-dallas.lvuft.com}, udp: true}
-  - {name: _US_美国 7, server: 70.39.67.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: amu1ahfi.com}, udp: true}
-  - {name: AU_19 TG@peekfun, server: 172.105.180.227, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US_185, server: 38.143.66.71, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: Relay_🇱🇺LU-🇩🇪DE_107, server: 5.253.204.194, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: qLzS7DF9qRYxJTHfckhC, udp: true}
-  - {name: US_154, server: 38.143.66.71, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: :美国-ss-38.143.66.71:2376-可用-直连-仅支持美国地区NF自制剧, server: 38.143.66.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 【VIP1】香港HK 04_12, server: niaocloud-gy.niaoyun.online, port: 4004, type: vmess, uuid: 19435e23-43c3-3ede-9bbb-c1ab747fc8be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/news, ws-headers: {Host: niaocloud-gy.niaoyun.online}, udp: true}
-  - {name: US_1641, server: 38.143.66.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 169.197.142.39:6379, server: 169.197.142.39, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 華人社區_經紀人CC🌸🌸_188, server: v3.ssrsub.com, port: 443, type: vmess, uuid: 1c356475-9d2e-4b35-b05a-95517756e7a5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v3.ssrsub.com}, udp: true}
-  - {name: "美国[感谢订阅——科技网络] 6", server: 38.143.66.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_144, server: 38.143.66.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_236, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1526, server: 38.143.66.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_192, server: 38.143.66.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: NL_607, server: 89.31.127.151, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 8, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}, udp: true}
-  - {name: "美国[感谢订阅——科技网络] 2", server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}, udp: true}
+  - {name: 印度阿伟科技-油管, server: 52.140.123.35, port: 80, type: vmess, uuid: 5401fcb0-2899-4c05-8eee-1728b8a1affc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 52.140.123.35}, udp: true}
+  - {name: 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: iesei1ei.com}, udp: true}
+  - {name: ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_148, server: 112.64.69.187, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1722, server: 66.55.92.101, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW, udp: true}
+  - {name: _日本_<YouTube：VV科技>+<TG：t.me/vvkj11>_25, server: 192.243.120.45, port: 52593, type: vmess, uuid: e8947ce2-21f5-4daa-80ef-6ba42b0f7ed6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_384, server: 112.64.69.187, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CYL-科技（2022.01.11）, server: in-am2.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: fD0KP8PWA, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: US_1993, server: usa-sanfrancisco.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}, udp: true}
+  - {name: _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_139, server: free-russian-cdn.xiaohouzi.club, port: 80, type: vmess, uuid: 3b29a023-5a4e-412a-a4a6-581437ad5679, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: free-russian-cdn.xiaohouzi.club}, udp: true}
+  - {name: CYL-科技（2022.01.11） 2, server: hzcu.rymv2rayssl.xyz, port: 44605, type: vmess, uuid: 5002a71b-d203-3a1d-987f-99522eccdc25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 185.172.115.80}, udp: true}
+  - {name: 37.120.136.234:8389, server: 37.120.136.234, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Xd2xnHT8tYkVt5BDk92b, udp: true}
+  - {name: CYL-科技（2022.01.11） 3, server: 23.82.136.151, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 23.82.136.151}, udp: true}
+  - {name: _瑞典_<YouTube：VV科技>+<TG：t.me/vvkj11>_149, server: se.oceancloud.asia, port: 12100, type: vmess, uuid: adfc4bf6-8f7d-393e-9997-7dd969d9ea88, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /se, ws-headers: {Host: se.oceancloud.asia}, udp: true}
+  - {name: CYL-科技（2022.01.11） 4, server: usa-miami.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-miami.lvuft.com}, udp: true}
+  - {name: _US_美国, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}, udp: true}
   - {name: 22, server: hkmax06.170809.xyz, port: 10052, type: ss, cipher: chacha20-ietf-poly1305, password: 89386c1f-435f-4bb5-9c10-118e07c01621, udp: true}
-  - {name: US_1670, server: 167.88.61.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US(Youtube技术分享室整理), server: 104.23.119.57, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
-  - {name: 小熙机场节点, server: cm-jm.okvpn.xyz, port: 20005, type: vmess, uuid: 878a62fe-93ac-4f48-bb9a-9f765a40a75f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}, udp: true}
-  - {name: _US_美国 9, server: fa1.uuv2.co.uk, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}, udp: true}
-  - {name: Relay_-🇨🇦CA_15, server: t4.ssrsub.com, port: 156, type: trojan, password: e6c36d58-6070-4b55-a437-146e6b53ec57, sni: t4.ssrsub.com, skip-cert-verify: true, udp: true}
-  - {name: ZZ_242, server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ_208 TG@peekfun, server: 169.197.142.39, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 107.167.23.50:8084, server: 107.167.23.50, port: 8084, type: ssr, cipher: aes-256-cfb, password: RhKqtYoG8, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: _美国_(YouTube：VV科技)+（TG：t.me/vvkj11）_110, server: 207.246.96.45, port: 35305, type: vmess, uuid: eeb0f7ac-71b6-11ec-8333-560003c929d9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /Y7wFIOps/, ws-headers: {Host: 207.246.96.45}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_159, server: 70.32.0.208, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: q4apPAjyY9knqKS4e9xZ, udp: true}
-  - {name: ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_23, server: 117.28.243.220, port: 8036, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: SG_33-2 @WangCai_1, server: 81.90.189.33, port: 890, type: ss, cipher: chacha20-ietf-poly1305, password: KhS1x8JT7p58RIp7gz, udp: true}
-  - {name: US_160, server: 96.47.224.2, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: YDNYJcNdH5xuLrhyr7Fj, udp: true}
-  - {name: Relay_-🇨🇦CA_20, server: t3.ssrsub.com, port: 156, type: trojan, password: e6c36d58-6070-4b55-a437-146e6b53ec57, sni: t3.ssrsub.com, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_143, server: 66.55.92.101, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW, udp: true}
+  - {name: Relay_🇬🇧GB-🇬🇧GB_455, server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: ray, ws-headers: {Host: us1nhg-node.aiqiche123.com}, udp: true}
+  - {name: 美国, server: usa-sanfrancisco.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}, udp: true}
+  - {name: _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_57, server: 216.24.178.62, port: 52593, type: vmess, uuid: e8947ce2-21f5-4daa-80ef-6ba42b0f7ed6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_58, server: 216.24.178.62, port: 52593, type: vmess, uuid: e8947ce2-21f5-4daa-80ef-6ba42b0f7ed6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_81, server: 104.245.96.88, port: 52593, type: vmess, uuid: e8947ce2-21f5-4daa-80ef-6ba42b0f7ed6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CYL-科技（2022.01.11） 5, server: 156.251.141.235, port: 443, type: vmess, uuid: 8cf91d03-990a-4d70-9ab3-672ba7b882b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /GNTHk4fO2F, ws-headers: {Host: 3.ezydfdd.com}, udp: true}
+  - {name: _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_66, server: 104.245.96.88, port: 52593, type: vmess, uuid: e8947ce2-21f5-4daa-80ef-6ba42b0f7ed6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_172, server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: ray, ws-headers: {Host: us1nhg-node.aiqiche123.com}, udp: true}
+  - {name: LAX-IT7, server: 216.24.178.62, port: 52593, type: vmess, uuid: e8947ce2-21f5-4daa-80ef-6ba42b0f7ed6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Amsterdam-Fiber, server: 104.245.96.88, port: 52593, type: vmess, uuid: e8947ce2-21f5-4daa-80ef-6ba42b0f7ed6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: LAX-IT7 2, server: 216.24.178.62, port: 52593, type: vmess, uuid: e8947ce2-21f5-4daa-80ef-6ba42b0f7ed6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK(Youtube技术分享室整理) 8, server: www.digitalocean.com, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_202, server: v8.ssrsub.com, port: 443, type: vmess, uuid: e6c36d58-6070-4b55-a437-146e6b53ec57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
+  - {name: "lv-默认,速度看天", server: us.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: us.fovi.tk}, udp: true}
+  - {name: _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_69, server: 172.67.147.173, port: 443, type: vmess, uuid: 1c356475-9d2e-4b35-b05a-95517756e7a5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
+  - {name: 美国 126, server: 198.41.212.154, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
+  - {name: CYL-科技（2022.01.11） 6, server: 104.16.181.103, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
+  - {name: 美国 127, server: 142.4.105.253, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 142.4.105.253}, udp: true}
+  - {name: 美国 138, server: 104.16.181.150, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_187, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 1c356475-9d2e-4b35-b05a-95517756e7a5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
+  - {name: "|24.09Mb", server: 209.58.139.41, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-sanfrancisco.lvuft.com}, udp: true}
+  - {name: US_1525, server: 38.75.136.93, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 美国2, server: 142.4.105.253, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: "%7B%22Host%22:%22142.4.105.253%22%7D"}, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_203, server: v9.ssrsub.com, port: 8443, type: vmess, uuid: e6c36d58-6070-4b55-a437-146e6b53ec57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v9.ssrsub.com}, udp: true}
+  - {name: CYL-科技（2022.01.11） 7, server: free-russian-cdn.xiaohouzi.club, port: 80, type: vmess, uuid: 3b29a023-5a4e-412a-a4a6-581437ad5679, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: free-russian-cdn.xiaohouzi.club}, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_202 2, server: v8.ssrsub.com, port: 443, type: vmess, uuid: e6c36d58-6070-4b55-a437-146e6b53ec57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
+  - {name: RO_127, server: 45.83.91.66, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: fAmKHf3Dft78ZyzL9kYF, udp: true}
   - {name: ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_66, server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: Amsterdam-Fiber 2, server: 104.245.96.88, port: 52593, type: vmess, uuid: e8947ce2-21f5-4daa-80ef-6ba42b0f7ed6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_234, server: v3.ssrsub.com, port: 443, type: vmess, uuid: e6c36d58-6070-4b55-a437-146e6b53ec57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v3.ssrsub.com}, udp: true}
+  - {name: -美国-104.22.44.50, server: 104.22.44.50, port: 443, type: vmess, uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/The-Great-Awakening_vws?ed=2048", ws-headers: {Host: vincent-jackson2021.ga}, udp: true}
+  - {name: a 38, server: 104.19.107.102, port: 443, type: vmess, uuid: 24b4b1e1-7a89-45f6-858c-242cf53b5bdb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vmess, ws-headers: {Host: morning-mud-2d55.tianzhen169.workers.dev}, udp: true}
+  - {name: ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_99, server: 172.67.197.254, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}, udp: true}
+  - {name: Osaka-IT7, server: 192.243.120.45, port: 52593, type: vmess, uuid: e8947ce2-21f5-4daa-80ef-6ba42b0f7ed6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_35, server: inapus.mooncloud.bike, port: 8443, type: vmess, uuid: 0d69346e-9a21-394e-a00a-ffec7fad5956, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: inapus1.mooncloud.bike}, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_532, server: 107.182.234.233, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV, udp: true}
+  - {name: lv-移动优选v4, server: 104.17.161.28, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: us.fovi.tk}, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_187 2, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 1c356475-9d2e-4b35-b05a-95517756e7a5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_193, server: v8.ssrsub.com, port: 443, type: vmess, uuid: 1c356475-9d2e-4b35-b05a-95517756e7a5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
+  - {name: 美国 058, server: us07.vip-v2ray.cf, port: 58740, type: vmess, uuid: 4ca67d33-f626-47ba-e077-0ff6742fc31c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 058 2, server: us07.vip-v2ray.cf, port: 58740, type: vmess, uuid: 4ca67d33-f626-47ba-e077-0ff6742fc31c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72, server: 104.24.160.31, port: 80, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
+  - {name: 169.197.142.39:3389, server: 169.197.142.39, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国 137, server: 104.16.181.197, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_225, server: v3.ssrsub.com, port: 443, type: vmess, uuid: 1c356475-9d2e-4b35-b05a-95517756e7a5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v3.ssrsub.com}, udp: true}
+  - {name: 37.120.137.82:8389, server: 37.120.137.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: EGTHtnGhcnggx5yBYSqS, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 6", server: 38.143.66.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: CYL-科技（2022.01.11） 8, server: 72.167.45.6, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: _美国_<电报+YouTube：VV科技>_28, server: 172.67.197.254, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}, udp: true}
+  - {name: US_1388, server: 167.88.61.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: IL_108 TG@peekfun, server: 212.199.61.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW, udp: true}
+  - {name: Te 2, server: 104.16.104.126, port: 443, type: vmess, uuid: 24b4b1e1-7a89-45f6-858c-242cf53b5bdb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /24b4b1e1-7a89-45f6-858c-242cf53b5bdb-vmess, ws-headers: {Host: sweet-salad-aa33.tianzhen19880808.workers.dev}, udp: true}
+  - {name: ZZ_232, server: 169.197.142.39, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: RU_169 TG@peekfun, server: 82.202.220.242, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: Kw6hMXQ2Z7ey7mf2Uqyr, udp: true}
+  - {name: _CN_中国_7, server: 118.193.179.2, port: 36923, type: ss, cipher: chacha20-ietf-poly1305, password: koko666, udp: true}
+  - {name: Pool_🇺🇸US_222, server: 70.39.67.130, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: amu1ahfi.com}, udp: true}
+  - {name: 美国 2, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: iesei1ei.com}, udp: true}
+  - {name: 41新加坡, server: 104.27.201.0, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: zecjk.com}, udp: true}
+  - {name: 26英国, server: 104.27.197.181, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: uk-manchester.eiw2eemo.com}, udp: true}
+  - {name: US_1641, server: 38.143.66.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: ZZ_2194, server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ZZ_2199, server: 169.197.142.39, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 【新鸟免费】美国UA -DO 07 免流 1.0x, server: mf-do-ua-07.xncloud.xyz, port: 80, type: vmess, uuid: 36444988-5420-30e6-8d48-87088c824a49, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-07.xncloud.xyz}, udp: true}
+  - {name: ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_33, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}, udp: true}
+  - {name: US_172 TG@peekfun, server: 72.167.45.6, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_160, server: 107.182.234.233, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV, udp: true}
+  - {name: 37.120.212.162:8389, server: 37.120.212.162, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2XtmwMEgsVJYKWF4VjkL, udp: true}
+  - {name: CYL-科技（2022.01.11） 9, server: shz3.mooncloud.bike, port: 8443, type: vmess, uuid: 0d69346e-9a21-394e-a00a-ffec7fad5956, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: shz3.mooncloud.bike}, udp: true}
+  - {name: 【新鸟免费】美国UA -DO 07 免流 1.0x 2, server: mf-do-ua-07.xncloud.xyz, port: 80, type: vmess, uuid: 0c5a99fc-6da8-34bb-8ed1-8511c2b4560b, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-do-ua-07.xncloud.xyz}, udp: true}
+  - {name: -美国-104.16.16.255, server: 104.16.16.255, port: 443, type: vmess, uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/The-Great-Awakening_vws?ed=2048", ws-headers: {Host: vincent-jackson2021.ga}, udp: true}
+  - {name: CYL-科技（2022.01.11） 10, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 208.98.48.2}, udp: true}
+  - {name: US_185, server: 38.143.66.71, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: "| 9.79Mb", server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shuier, ws-headers: {Host: xc1.v2rie.pp.ua}, udp: true}
+  - {name: 183韩国_61, server: 104.27.197.181, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: xe3rayu3.com}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_2056, server: inapus1.mooncloud.bike, port: 8443, type: vmess, uuid: 0d69346e-9a21-394e-a00a-ffec7fad5956, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: inapus1.mooncloud.bike}, udp: true}
+  - {name: ZZ_2207, server: 169.197.142.39, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: ZZ_2209, server: 169.197.142.39, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: ZZ_2208, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_188, server: v3.ssrsub.com, port: 443, type: vmess, uuid: 1c356475-9d2e-4b35-b05a-95517756e7a5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v3.ssrsub.com}, udp: true}
+  - {name: _美国_(YouTube：VV科技) TG：t.me/vvkj11_95, server: 167.88.61.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ZZ_241, server: 169.197.142.39, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: RO_112 TG@peekfun, server: 62.216.92.179, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: CYL-科技（2022.01.11） 11, server: cm-jm.okvpn.xyz, port: 20005, type: vmess, uuid: bbf375e6-d185-4d08-9c29-142169e08ca0, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}, udp: true}
+  - {name: _US_美国 2, server: 167.88.61.60, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_561, server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_162, server: 38.143.66.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: CYL-科技（2022.01.11） 12, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: iesei1ei.com}, udp: true}
+  - {name: CYL-科技（2022.01.11） 13, server: 89.31.127.151, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: ZZ_231, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_228, server: v6.ssrsub.com, port: 8443, type: vmess, uuid: 1c356475-9d2e-4b35-b05a-95517756e7a5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v6.ssrsub.com}, udp: true}
+  - {name: Alien, server: 8.210.214.129, port: 9000, type: vmess, uuid: d120c693-682c-4133-9360-d201effa857a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: ZZ_208 TG@peekfun, server: 169.197.142.39, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: CYL-科技（2022.01.11） 14, server: 209.209.114.222, port: 21888, type: vmess, uuid: 27aba096-4d20-49d3-9ee8-ae29aaa24b7b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 209.209.114.222}, udp: true}
+  - {name: "|78.42Mb", server: 62.216.92.179, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: _保加利亚_(YouTube：VV科技) TG：t.me/vvkj11_101, server: 217.138.221.42, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: r4MP5DzDNmAqbBHzbSXw, udp: true}
+  - {name: RO_116 TG@peekfun, server: 62.216.92.180, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: "[01-04]-🇷🇴-罗马尼亚-2266-62.216.92.179", server: 62.216.92.179, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_194, server: v9.ssrsub.com, port: 8443, type: vmess, uuid: 1c356475-9d2e-4b35-b05a-95517756e7a5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v9.ssrsub.com}, udp: true}
+  - {name: NL_134, server: 89.31.127.151, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: ZZ_215 TG@peekfun, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 15, server: www.ltzs.buzz, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}, udp: true}
+  - {name: GB_97 TG@peekfun, server: 109.74.194.189, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_163, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: 208.98.48.2}, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_197, server: v3.ssrsub.com, port: 443, type: vmess, uuid: e6c36d58-6070-4b55-a437-146e6b53ec57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v3.ssrsub.com}, udp: true}
+  - {name: US_192, server: 38.143.66.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: CYL-科技（2022.01.11） 15, server: 104.23.119.57, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
+  - {name: CYL-科技（2022.01.11） 16, server: 89.31.127.151, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 6, server: 169.197.142.39, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 169.197.142.39:9101, server: 169.197.142.39, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: RU_143 TG@peekfun, server: 82.202.220.242, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Kw6hMXQ2Z7ey7mf2Uqyr, udp: true}
+  - {name: BG_26 TG@peekfun, server: 194.68.225.104, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: HU_105 TG@peekfun, server: 185.128.26.130, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: GU3kqh2ZSkzFkRBp4hxy, udp: true}
+  - {name: 華人社區_經紀人CC🌸🌸_196, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: e6c36d58-6070-4b55-a437-146e6b53ec57, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -150,286 +142,270 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 印度阿伟科技-油管
-      - 台湾
-      - 【VIP2】美国UA 04_22
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_73
-      - NL_131
-      - NL_134
-      - 【VIP1】日本JP 04
-      - RO_791
-      - 【VIP2】新加坡SG 01_13
-      - _中国跳转_（欢迎订阅YouTube：VV科技）_80
-      - "|19.27Mb"
-      - Relay_-🇨🇦CA_21
-      - US_1523
-      - 【VIP1】香港HK 04
-      - CYL-科技（2022.01.09）_9
-      - 美国[感谢订阅——科技网络]
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_148
+      - Relay_🇺🇸US-🇺🇸US_1722
+      - _日本_<YouTube：VV科技>+<TG：t.me/vvkj11>_25
+      - 華人社區_經紀人CC🌸🌸_384
+      - CYL-科技（2022.01.11）
+      - US_1993
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_139
+      - CYL-科技（2022.01.11） 2
+      - 37.120.136.234:8389
+      - CYL-科技（2022.01.11） 3
+      - _瑞典_<YouTube：VV科技>+<TG：t.me/vvkj11>_149
+      - CYL-科技（2022.01.11） 4
       - _US_美国
-      - US_1680
-      - 【VIP1】香港HK 01_9
-      - Relay_🇨🇳CN-🇹🇼TW_279
-      - 中国_TG@nodesharing_803
-      - 美国阿伟科技-油管
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_9
-      - 【VIP2】美国UA 03
-      - Ytb:鹏哥分享_NL_荷兰_21
-      - Relay_🇺🇸US-🇺🇸US_143
-      - _US_美国 2
-      - 美国阿伟科技-油管 2
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_65
-      - _US_美国 3
-      - _83
-      - 【VIP1】香港HK 03
-      - 美国 4_63
-      - 美国绿头外网集团Public_270
-      - US_156
-      - a 38
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_79
-      - US_1994 |81.26Mb
-      - US_1721
-      - US_150
-      - US_1696
-      - 俄罗斯阿伟科技-油管
-      - -美国-c23s3.jamjams.net_223
-      - CYL-科技（2022.01.09）_17
-      - 美国 126
-      - 華人社區_經紀人CC🌸🌸_194
-      - default_name
-      - US_1690
-      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
-      - 華人社區_經紀人CC🌸🌸_203
-      - US_166
-      - Ytb:鹏哥分享_HU_匈牙利_5
-      - US_191
-      - US_190 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_202
-      - US_1981 |44.09Mb
-      - US_1654
-      - 167.88.61.60:3306
-      - _US_美国 4
-      - ZZ_233
-      - US_169 TG@peekfun
-      - US_172 TG@peekfun
-      - Ytb:鹏哥分享_HU_匈牙利_4
-      - ZZ_2218
-      - _US_美国 5
-      - ZZ_2190
-      - US_180 TG@peekfun
-      - US_1698
-      - ZZ_232
-      - ZZ_247
-      - ZZ_217 TG@peekfun
-      - US_182
-      - CYL-科技（2022.01.09）_31
-      - US_1666
-      - 美国 103
-      - "| 9.79Mb"
-      - ZZ_2199
-      - ZZ_2209
-      - US_153 TG@peekfun
-      - 38.75.136.93:443
-      - US_184 TG@peekfun
-      - ZZ_231
-      - US_176 TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_160
-      - 美国 137
-      - 38.75.136.93:8080
-      - US_1524
-      - 美国 058
-      - Relay_🇺🇸US-🇺🇸US_1210
-      - AU_20 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_532
-      - FR_92 TG@peekfun
-      - 美国 127
-      - US_186 TG@peekfun
-      - 37.120.137.82:8389
-      - US_156 TG@peekfun
-      - 【VIP1】香港HK 02
-      - 172.105.180.227:5001
-      - US_180
-      - US_1156
-      - US_181 TG@peekfun
-      - US_185 TG@peekfun
-      - US_177 TG@peekfun
-      - _US_美国 6
-      - _US_美国 7
-      - AU_19 TG@peekfun
-      - US_185
-      - Relay_🇱🇺LU-🇩🇪DE_107
-      - US_154
-      - :美国-ss-38.143.66.71:2376-可用-直连-仅支持美国地区NF自制剧
-      - 【VIP1】香港HK 04_12
-      - US_1641
-      - 169.197.142.39:6379
-      - 華人社區_經紀人CC🌸🌸_188
-      - 美国[感谢订阅——科技网络] 6
-      - US_144
-      - ZZ_236
-      - US_1526
-      - US_192
-      - NL_607
-      - _US_美国 8
-      - 美国[感谢订阅——科技网络] 2
       - 22
-      - US_1670
-      - US(Youtube技术分享室整理)
-      - 小熙机场节点
-      - _US_美国 9
-      - Relay_-🇨🇦CA_15
-      - ZZ_242
-      - ZZ_208 TG@peekfun
-      - 107.167.23.50:8084
-      - _美国_(YouTube：VV科技)+（TG：t.me/vvkj11）_110
-      - Relay_🇺🇸US-🇺🇸US_159
-      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_23
-      - SG_33-2 @WangCai_1
-      - US_160
-      - Relay_-🇨🇦CA_20
+      - Relay_🇺🇸US-🇺🇸US_143
+      - Relay_🇬🇧GB-🇬🇧GB_455
+      - 美国
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_57
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_58
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_81
+      - CYL-科技（2022.01.11） 5
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_66
+      - 華人社區_經紀人CC🌸🌸_172
+      - LAX-IT7
+      - Amsterdam-Fiber
+      - LAX-IT7 2
+      - HK(Youtube技术分享室整理) 8
+      - 華人社區_經紀人CC🌸🌸_202
+      - lv-默认,速度看天
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_69
+      - 美国 126
+      - CYL-科技（2022.01.11） 6
+      - 美国 127
+      - 美国 138
+      - 華人社區_經紀人CC🌸🌸_187
+      - "|24.09Mb"
+      - US_1525
+      - 美国2
+      - 華人社區_經紀人CC🌸🌸_203
+      - CYL-科技（2022.01.11） 7
+      - 華人社區_經紀人CC🌸🌸_202 2
+      - RO_127
       - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_66
+      - Amsterdam-Fiber 2
+      - 華人社區_經紀人CC🌸🌸_234
+      - -美国-104.22.44.50
+      - a 38
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_99
+      - Osaka-IT7
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_35
+      - 華人社區_經紀人CC🌸🌸_532
+      - lv-移动优选v4
+      - 華人社區_經紀人CC🌸🌸_187 2
+      - 華人社區_經紀人CC🌸🌸_193
+      - 美国 058
+      - 美国 058 2
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
+      - 169.197.142.39:3389
+      - 美国 137
+      - 華人社區_經紀人CC🌸🌸_225
+      - 37.120.137.82:8389
+      - 美国[感谢订阅——科技网络] 6
+      - CYL-科技（2022.01.11） 8
+      - _美国_<电报+YouTube：VV科技>_28
+      - US_1388
+      - IL_108 TG@peekfun
+      - Te 2
+      - ZZ_232
+      - RU_169 TG@peekfun
+      - _CN_中国_7
+      - Pool_🇺🇸US_222
+      - 美国 2
+      - 41新加坡
+      - 26英国
+      - US_1641
+      - ZZ_2194
+      - ZZ_2199
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_33
+      - US_172 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_160
+      - 37.120.212.162:8389
+      - CYL-科技（2022.01.11） 9
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x 2
+      - -美国-104.16.16.255
+      - CYL-科技（2022.01.11） 10
+      - US_185
+      - "| 9.79Mb"
+      - 183韩国_61
+      - Relay_🇺🇸US-🇺🇸US_2056
+      - ZZ_2207
+      - ZZ_2209
+      - ZZ_2208
+      - 華人社區_經紀人CC🌸🌸_188
+      - _美国_(YouTube：VV科技) TG：t.me/vvkj11_95
+      - ZZ_241
+      - RO_112 TG@peekfun
+      - CYL-科技（2022.01.11） 11
+      - _US_美国 2
+      - 華人社區_經紀人CC🌸🌸_561
+      - US_162
+      - CYL-科技（2022.01.11） 12
+      - CYL-科技（2022.01.11） 13
+      - ZZ_231
+      - 華人社區_經紀人CC🌸🌸_228
+      - Alien
+      - ZZ_208 TG@peekfun
+      - CYL-科技（2022.01.11） 14
+      - "|78.42Mb"
+      - _保加利亚_(YouTube：VV科技) TG：t.me/vvkj11_101
+      - RO_116 TG@peekfun
+      - "[01-04]-🇷🇴-罗马尼亚-2266-62.216.92.179"
+      - 華人社區_經紀人CC🌸🌸_194
+      - NL_134
+      - ZZ_215 TG@peekfun
+      - _US_美国 15
+      - GB_97 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_163
+      - 華人社區_經紀人CC🌸🌸_197
+      - US_192
+      - CYL-科技（2022.01.11） 15
+      - CYL-科技（2022.01.11） 16
+      - _US_美国 6
+      - 169.197.142.39:9101
+      - RU_143 TG@peekfun
+      - BG_26 TG@peekfun
+      - HU_105 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_196
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 印度阿伟科技-油管
-      - 台湾
-      - 【VIP2】美国UA 04_22
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_73
-      - NL_131
-      - NL_134
-      - 【VIP1】日本JP 04
-      - RO_791
-      - 【VIP2】新加坡SG 01_13
-      - _中国跳转_（欢迎订阅YouTube：VV科技）_80
-      - "|19.27Mb"
-      - Relay_-🇨🇦CA_21
-      - US_1523
-      - 【VIP1】香港HK 04
-      - CYL-科技（2022.01.09）_9
-      - 美国[感谢订阅——科技网络]
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_148
+      - Relay_🇺🇸US-🇺🇸US_1722
+      - _日本_<YouTube：VV科技>+<TG：t.me/vvkj11>_25
+      - 華人社區_經紀人CC🌸🌸_384
+      - CYL-科技（2022.01.11）
+      - US_1993
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_139
+      - CYL-科技（2022.01.11） 2
+      - 37.120.136.234:8389
+      - CYL-科技（2022.01.11） 3
+      - _瑞典_<YouTube：VV科技>+<TG：t.me/vvkj11>_149
+      - CYL-科技（2022.01.11） 4
       - _US_美国
-      - US_1680
-      - 【VIP1】香港HK 01_9
-      - Relay_🇨🇳CN-🇹🇼TW_279
-      - 中国_TG@nodesharing_803
-      - 美国阿伟科技-油管
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_9
-      - 【VIP2】美国UA 03
-      - Ytb:鹏哥分享_NL_荷兰_21
-      - Relay_🇺🇸US-🇺🇸US_143
-      - _US_美国 2
-      - 美国阿伟科技-油管 2
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_65
-      - _US_美国 3
-      - _83
-      - 【VIP1】香港HK 03
-      - 美国 4_63
-      - 美国绿头外网集团Public_270
-      - US_156
-      - a 38
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_79
-      - US_1994 |81.26Mb
-      - US_1721
-      - US_150
-      - US_1696
-      - 俄罗斯阿伟科技-油管
-      - -美国-c23s3.jamjams.net_223
-      - CYL-科技（2022.01.09）_17
-      - 美国 126
-      - 華人社區_經紀人CC🌸🌸_194
-      - default_name
-      - US_1690
-      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
-      - 華人社區_經紀人CC🌸🌸_203
-      - US_166
-      - Ytb:鹏哥分享_HU_匈牙利_5
-      - US_191
-      - US_190 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_202
-      - US_1981 |44.09Mb
-      - US_1654
-      - 167.88.61.60:3306
-      - _US_美国 4
-      - ZZ_233
-      - US_169 TG@peekfun
-      - US_172 TG@peekfun
-      - Ytb:鹏哥分享_HU_匈牙利_4
-      - ZZ_2218
-      - _US_美国 5
-      - ZZ_2190
-      - US_180 TG@peekfun
-      - US_1698
-      - ZZ_232
-      - ZZ_247
-      - ZZ_217 TG@peekfun
-      - US_182
-      - CYL-科技（2022.01.09）_31
-      - US_1666
-      - 美国 103
-      - "| 9.79Mb"
-      - ZZ_2199
-      - ZZ_2209
-      - US_153 TG@peekfun
-      - 38.75.136.93:443
-      - US_184 TG@peekfun
-      - ZZ_231
-      - US_176 TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_160
-      - 美国 137
-      - 38.75.136.93:8080
-      - US_1524
-      - 美国 058
-      - Relay_🇺🇸US-🇺🇸US_1210
-      - AU_20 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_532
-      - FR_92 TG@peekfun
-      - 美国 127
-      - US_186 TG@peekfun
-      - 37.120.137.82:8389
-      - US_156 TG@peekfun
-      - 【VIP1】香港HK 02
-      - 172.105.180.227:5001
-      - US_180
-      - US_1156
-      - US_181 TG@peekfun
-      - US_185 TG@peekfun
-      - US_177 TG@peekfun
-      - _US_美国 6
-      - _US_美国 7
-      - AU_19 TG@peekfun
-      - US_185
-      - Relay_🇱🇺LU-🇩🇪DE_107
-      - US_154
-      - :美国-ss-38.143.66.71:2376-可用-直连-仅支持美国地区NF自制剧
-      - 【VIP1】香港HK 04_12
-      - US_1641
-      - 169.197.142.39:6379
-      - 華人社區_經紀人CC🌸🌸_188
-      - 美国[感谢订阅——科技网络] 6
-      - US_144
-      - ZZ_236
-      - US_1526
-      - US_192
-      - NL_607
-      - _US_美国 8
-      - 美国[感谢订阅——科技网络] 2
       - 22
-      - US_1670
-      - US(Youtube技术分享室整理)
-      - 小熙机场节点
-      - _US_美国 9
-      - Relay_-🇨🇦CA_15
-      - ZZ_242
-      - ZZ_208 TG@peekfun
-      - 107.167.23.50:8084
-      - _美国_(YouTube：VV科技)+（TG：t.me/vvkj11）_110
-      - Relay_🇺🇸US-🇺🇸US_159
-      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_23
-      - SG_33-2 @WangCai_1
-      - US_160
-      - Relay_-🇨🇦CA_20
+      - Relay_🇺🇸US-🇺🇸US_143
+      - Relay_🇬🇧GB-🇬🇧GB_455
+      - 美国
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_57
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_58
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_81
+      - CYL-科技（2022.01.11） 5
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_66
+      - 華人社區_經紀人CC🌸🌸_172
+      - LAX-IT7
+      - Amsterdam-Fiber
+      - LAX-IT7 2
+      - HK(Youtube技术分享室整理) 8
+      - 華人社區_經紀人CC🌸🌸_202
+      - lv-默认,速度看天
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_69
+      - 美国 126
+      - CYL-科技（2022.01.11） 6
+      - 美国 127
+      - 美国 138
+      - 華人社區_經紀人CC🌸🌸_187
+      - "|24.09Mb"
+      - US_1525
+      - 美国2
+      - 華人社區_經紀人CC🌸🌸_203
+      - CYL-科技（2022.01.11） 7
+      - 華人社區_經紀人CC🌸🌸_202 2
+      - RO_127
       - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_66
+      - Amsterdam-Fiber 2
+      - 華人社區_經紀人CC🌸🌸_234
+      - -美国-104.22.44.50
+      - a 38
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_99
+      - Osaka-IT7
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_35
+      - 華人社區_經紀人CC🌸🌸_532
+      - lv-移动优选v4
+      - 華人社區_經紀人CC🌸🌸_187 2
+      - 華人社區_經紀人CC🌸🌸_193
+      - 美国 058
+      - 美国 058 2
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
+      - 169.197.142.39:3389
+      - 美国 137
+      - 華人社區_經紀人CC🌸🌸_225
+      - 37.120.137.82:8389
+      - 美国[感谢订阅——科技网络] 6
+      - CYL-科技（2022.01.11） 8
+      - _美国_<电报+YouTube：VV科技>_28
+      - US_1388
+      - IL_108 TG@peekfun
+      - Te 2
+      - ZZ_232
+      - RU_169 TG@peekfun
+      - _CN_中国_7
+      - Pool_🇺🇸US_222
+      - 美国 2
+      - 41新加坡
+      - 26英国
+      - US_1641
+      - ZZ_2194
+      - ZZ_2199
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_33
+      - US_172 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_160
+      - 37.120.212.162:8389
+      - CYL-科技（2022.01.11） 9
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x 2
+      - -美国-104.16.16.255
+      - CYL-科技（2022.01.11） 10
+      - US_185
+      - "| 9.79Mb"
+      - 183韩国_61
+      - Relay_🇺🇸US-🇺🇸US_2056
+      - ZZ_2207
+      - ZZ_2209
+      - ZZ_2208
+      - 華人社區_經紀人CC🌸🌸_188
+      - _美国_(YouTube：VV科技) TG：t.me/vvkj11_95
+      - ZZ_241
+      - RO_112 TG@peekfun
+      - CYL-科技（2022.01.11） 11
+      - _US_美国 2
+      - 華人社區_經紀人CC🌸🌸_561
+      - US_162
+      - CYL-科技（2022.01.11） 12
+      - CYL-科技（2022.01.11） 13
+      - ZZ_231
+      - 華人社區_經紀人CC🌸🌸_228
+      - Alien
+      - ZZ_208 TG@peekfun
+      - CYL-科技（2022.01.11） 14
+      - "|78.42Mb"
+      - _保加利亚_(YouTube：VV科技) TG：t.me/vvkj11_101
+      - RO_116 TG@peekfun
+      - "[01-04]-🇷🇴-罗马尼亚-2266-62.216.92.179"
+      - 華人社區_經紀人CC🌸🌸_194
+      - NL_134
+      - ZZ_215 TG@peekfun
+      - _US_美国 15
+      - GB_97 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_163
+      - 華人社區_經紀人CC🌸🌸_197
+      - US_192
+      - CYL-科技（2022.01.11） 15
+      - CYL-科技（2022.01.11） 16
+      - _US_美国 6
+      - 169.197.142.39:9101
+      - RU_143 TG@peekfun
+      - BG_26 TG@peekfun
+      - HU_105 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_196
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -437,143 +413,135 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 印度阿伟科技-油管
-      - 台湾
-      - 【VIP2】美国UA 04_22
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_73
-      - NL_131
-      - NL_134
-      - 【VIP1】日本JP 04
-      - RO_791
-      - 【VIP2】新加坡SG 01_13
-      - _中国跳转_（欢迎订阅YouTube：VV科技）_80
-      - "|19.27Mb"
-      - Relay_-🇨🇦CA_21
-      - US_1523
-      - 【VIP1】香港HK 04
-      - CYL-科技（2022.01.09）_9
-      - 美国[感谢订阅——科技网络]
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_148
+      - Relay_🇺🇸US-🇺🇸US_1722
+      - _日本_<YouTube：VV科技>+<TG：t.me/vvkj11>_25
+      - 華人社區_經紀人CC🌸🌸_384
+      - CYL-科技（2022.01.11）
+      - US_1993
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_139
+      - CYL-科技（2022.01.11） 2
+      - 37.120.136.234:8389
+      - CYL-科技（2022.01.11） 3
+      - _瑞典_<YouTube：VV科技>+<TG：t.me/vvkj11>_149
+      - CYL-科技（2022.01.11） 4
       - _US_美国
-      - US_1680
-      - 【VIP1】香港HK 01_9
-      - Relay_🇨🇳CN-🇹🇼TW_279
-      - 中国_TG@nodesharing_803
-      - 美国阿伟科技-油管
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_9
-      - 【VIP2】美国UA 03
-      - Ytb:鹏哥分享_NL_荷兰_21
-      - Relay_🇺🇸US-🇺🇸US_143
-      - _US_美国 2
-      - 美国阿伟科技-油管 2
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_65
-      - _US_美国 3
-      - _83
-      - 【VIP1】香港HK 03
-      - 美国 4_63
-      - 美国绿头外网集团Public_270
-      - US_156
-      - a 38
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_79
-      - US_1994 |81.26Mb
-      - US_1721
-      - US_150
-      - US_1696
-      - 俄罗斯阿伟科技-油管
-      - -美国-c23s3.jamjams.net_223
-      - CYL-科技（2022.01.09）_17
-      - 美国 126
-      - 華人社區_經紀人CC🌸🌸_194
-      - default_name
-      - US_1690
-      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
-      - 華人社區_經紀人CC🌸🌸_203
-      - US_166
-      - Ytb:鹏哥分享_HU_匈牙利_5
-      - US_191
-      - US_190 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_202
-      - US_1981 |44.09Mb
-      - US_1654
-      - 167.88.61.60:3306
-      - _US_美国 4
-      - ZZ_233
-      - US_169 TG@peekfun
-      - US_172 TG@peekfun
-      - Ytb:鹏哥分享_HU_匈牙利_4
-      - ZZ_2218
-      - _US_美国 5
-      - ZZ_2190
-      - US_180 TG@peekfun
-      - US_1698
-      - ZZ_232
-      - ZZ_247
-      - ZZ_217 TG@peekfun
-      - US_182
-      - CYL-科技（2022.01.09）_31
-      - US_1666
-      - 美国 103
-      - "| 9.79Mb"
-      - ZZ_2199
-      - ZZ_2209
-      - US_153 TG@peekfun
-      - 38.75.136.93:443
-      - US_184 TG@peekfun
-      - ZZ_231
-      - US_176 TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_160
-      - 美国 137
-      - 38.75.136.93:8080
-      - US_1524
-      - 美国 058
-      - Relay_🇺🇸US-🇺🇸US_1210
-      - AU_20 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_532
-      - FR_92 TG@peekfun
-      - 美国 127
-      - US_186 TG@peekfun
-      - 37.120.137.82:8389
-      - US_156 TG@peekfun
-      - 【VIP1】香港HK 02
-      - 172.105.180.227:5001
-      - US_180
-      - US_1156
-      - US_181 TG@peekfun
-      - US_185 TG@peekfun
-      - US_177 TG@peekfun
-      - _US_美国 6
-      - _US_美国 7
-      - AU_19 TG@peekfun
-      - US_185
-      - Relay_🇱🇺LU-🇩🇪DE_107
-      - US_154
-      - :美国-ss-38.143.66.71:2376-可用-直连-仅支持美国地区NF自制剧
-      - 【VIP1】香港HK 04_12
-      - US_1641
-      - 169.197.142.39:6379
-      - 華人社區_經紀人CC🌸🌸_188
-      - 美国[感谢订阅——科技网络] 6
-      - US_144
-      - ZZ_236
-      - US_1526
-      - US_192
-      - NL_607
-      - _US_美国 8
-      - 美国[感谢订阅——科技网络] 2
       - 22
-      - US_1670
-      - US(Youtube技术分享室整理)
-      - 小熙机场节点
-      - _US_美国 9
-      - Relay_-🇨🇦CA_15
-      - ZZ_242
-      - ZZ_208 TG@peekfun
-      - 107.167.23.50:8084
-      - _美国_(YouTube：VV科技)+（TG：t.me/vvkj11）_110
-      - Relay_🇺🇸US-🇺🇸US_159
-      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_23
-      - SG_33-2 @WangCai_1
-      - US_160
-      - Relay_-🇨🇦CA_20
+      - Relay_🇺🇸US-🇺🇸US_143
+      - Relay_🇬🇧GB-🇬🇧GB_455
+      - 美国
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_57
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_58
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_81
+      - CYL-科技（2022.01.11） 5
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_66
+      - 華人社區_經紀人CC🌸🌸_172
+      - LAX-IT7
+      - Amsterdam-Fiber
+      - LAX-IT7 2
+      - HK(Youtube技术分享室整理) 8
+      - 華人社區_經紀人CC🌸🌸_202
+      - lv-默认,速度看天
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_69
+      - 美国 126
+      - CYL-科技（2022.01.11） 6
+      - 美国 127
+      - 美国 138
+      - 華人社區_經紀人CC🌸🌸_187
+      - "|24.09Mb"
+      - US_1525
+      - 美国2
+      - 華人社區_經紀人CC🌸🌸_203
+      - CYL-科技（2022.01.11） 7
+      - 華人社區_經紀人CC🌸🌸_202 2
+      - RO_127
       - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_66
+      - Amsterdam-Fiber 2
+      - 華人社區_經紀人CC🌸🌸_234
+      - -美国-104.22.44.50
+      - a 38
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_99
+      - Osaka-IT7
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_35
+      - 華人社區_經紀人CC🌸🌸_532
+      - lv-移动优选v4
+      - 華人社區_經紀人CC🌸🌸_187 2
+      - 華人社區_經紀人CC🌸🌸_193
+      - 美国 058
+      - 美国 058 2
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
+      - 169.197.142.39:3389
+      - 美国 137
+      - 華人社區_經紀人CC🌸🌸_225
+      - 37.120.137.82:8389
+      - 美国[感谢订阅——科技网络] 6
+      - CYL-科技（2022.01.11） 8
+      - _美国_<电报+YouTube：VV科技>_28
+      - US_1388
+      - IL_108 TG@peekfun
+      - Te 2
+      - ZZ_232
+      - RU_169 TG@peekfun
+      - _CN_中国_7
+      - Pool_🇺🇸US_222
+      - 美国 2
+      - 41新加坡
+      - 26英国
+      - US_1641
+      - ZZ_2194
+      - ZZ_2199
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_33
+      - US_172 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_160
+      - 37.120.212.162:8389
+      - CYL-科技（2022.01.11） 9
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x 2
+      - -美国-104.16.16.255
+      - CYL-科技（2022.01.11） 10
+      - US_185
+      - "| 9.79Mb"
+      - 183韩国_61
+      - Relay_🇺🇸US-🇺🇸US_2056
+      - ZZ_2207
+      - ZZ_2209
+      - ZZ_2208
+      - 華人社區_經紀人CC🌸🌸_188
+      - _美国_(YouTube：VV科技) TG：t.me/vvkj11_95
+      - ZZ_241
+      - RO_112 TG@peekfun
+      - CYL-科技（2022.01.11） 11
+      - _US_美国 2
+      - 華人社區_經紀人CC🌸🌸_561
+      - US_162
+      - CYL-科技（2022.01.11） 12
+      - CYL-科技（2022.01.11） 13
+      - ZZ_231
+      - 華人社區_經紀人CC🌸🌸_228
+      - Alien
+      - ZZ_208 TG@peekfun
+      - CYL-科技（2022.01.11） 14
+      - "|78.42Mb"
+      - _保加利亚_(YouTube：VV科技) TG：t.me/vvkj11_101
+      - RO_116 TG@peekfun
+      - "[01-04]-🇷🇴-罗马尼亚-2266-62.216.92.179"
+      - 華人社區_經紀人CC🌸🌸_194
+      - NL_134
+      - ZZ_215 TG@peekfun
+      - _US_美国 15
+      - GB_97 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_163
+      - 華人社區_經紀人CC🌸🌸_197
+      - US_192
+      - CYL-科技（2022.01.11） 15
+      - CYL-科技（2022.01.11） 16
+      - _US_美国 6
+      - 169.197.142.39:9101
+      - RU_143 TG@peekfun
+      - BG_26 TG@peekfun
+      - HU_105 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_196
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -593,153 +561,139 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 印度阿伟科技-油管
-      - 台湾
-      - 【VIP2】美国UA 04_22
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_73
-      - NL_131
-      - NL_134
-      - 【VIP1】日本JP 04
-      - RO_791
-      - 【VIP2】新加坡SG 01_13
-      - _中国跳转_（欢迎订阅YouTube：VV科技）_80
-      - "|19.27Mb"
-      - Relay_-🇨🇦CA_21
-      - US_1523
-      - 【VIP1】香港HK 04
-      - CYL-科技（2022.01.09）_9
-      - 美国[感谢订阅——科技网络]
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_148
+      - Relay_🇺🇸US-🇺🇸US_1722
+      - _日本_<YouTube：VV科技>+<TG：t.me/vvkj11>_25
+      - 華人社區_經紀人CC🌸🌸_384
+      - CYL-科技（2022.01.11）
+      - US_1993
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_139
+      - CYL-科技（2022.01.11） 2
+      - 37.120.136.234:8389
+      - CYL-科技（2022.01.11） 3
+      - _瑞典_<YouTube：VV科技>+<TG：t.me/vvkj11>_149
+      - CYL-科技（2022.01.11） 4
       - _US_美国
-      - US_1680
-      - 【VIP1】香港HK 01_9
-      - Relay_🇨🇳CN-🇹🇼TW_279
-      - 中国_TG@nodesharing_803
-      - 美国阿伟科技-油管
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_9
-      - 【VIP2】美国UA 03
-      - Ytb:鹏哥分享_NL_荷兰_21
-      - Relay_🇺🇸US-🇺🇸US_143
-      - _US_美国 2
-      - 美国阿伟科技-油管 2
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_65
-      - _US_美国 3
-      - _83
-      - 【VIP1】香港HK 03
-      - 美国 4_63
-      - 美国绿头外网集团Public_270
-      - US_156
-      - a 38
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_79
-      - US_1994 |81.26Mb
-      - US_1721
-      - US_150
-      - US_1696
-      - 俄罗斯阿伟科技-油管
-      - -美国-c23s3.jamjams.net_223
-      - CYL-科技（2022.01.09）_17
-      - 美国 126
-      - 華人社區_經紀人CC🌸🌸_194
-      - default_name
-      - US_1690
-      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
-      - 華人社區_經紀人CC🌸🌸_203
-      - US_166
-      - Ytb:鹏哥分享_HU_匈牙利_5
-      - US_191
-      - US_190 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_202
-      - US_1981 |44.09Mb
-      - US_1654
-      - 167.88.61.60:3306
-      - _US_美国 4
-      - ZZ_233
-      - US_169 TG@peekfun
-      - US_172 TG@peekfun
-      - Ytb:鹏哥分享_HU_匈牙利_4
-      - ZZ_2218
-      - _US_美国 5
-      - ZZ_2190
-      - US_180 TG@peekfun
-      - US_1698
-      - ZZ_232
-      - ZZ_247
-      - ZZ_217 TG@peekfun
-      - US_182
-      - CYL-科技（2022.01.09）_31
-      - US_1666
-      - 美国 103
-      - "| 9.79Mb"
-      - ZZ_2199
-      - ZZ_2209
-      - US_153 TG@peekfun
-      - 38.75.136.93:443
-      - US_184 TG@peekfun
-      - ZZ_231
-      - US_176 TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_160
-      - 美国 137
-      - 38.75.136.93:8080
-      - US_1524
-      - 美国 058
-      - Relay_🇺🇸US-🇺🇸US_1210
-      - AU_20 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_532
-      - FR_92 TG@peekfun
-      - 美国 127
-      - US_186 TG@peekfun
-      - 37.120.137.82:8389
-      - US_156 TG@peekfun
-      - 【VIP1】香港HK 02
-      - 172.105.180.227:5001
-      - US_180
-      - US_1156
-      - US_181 TG@peekfun
-      - US_185 TG@peekfun
-      - US_177 TG@peekfun
-      - _US_美国 6
-      - _US_美国 7
-      - AU_19 TG@peekfun
-      - US_185
-      - Relay_🇱🇺LU-🇩🇪DE_107
-      - US_154
-      - :美国-ss-38.143.66.71:2376-可用-直连-仅支持美国地区NF自制剧
-      - 【VIP1】香港HK 04_12
-      - US_1641
-      - 169.197.142.39:6379
-      - 華人社區_經紀人CC🌸🌸_188
-      - 美国[感谢订阅——科技网络] 6
-      - US_144
-      - ZZ_236
-      - US_1526
-      - US_192
-      - NL_607
-      - _US_美国 8
-      - 美国[感谢订阅——科技网络] 2
       - 22
-      - US_1670
-      - US(Youtube技术分享室整理)
-      - 小熙机场节点
-      - _US_美国 9
-      - Relay_-🇨🇦CA_15
-      - ZZ_242
-      - ZZ_208 TG@peekfun
-      - 107.167.23.50:8084
-      - _美国_(YouTube：VV科技)+（TG：t.me/vvkj11）_110
-      - Relay_🇺🇸US-🇺🇸US_159
-      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_23
-      - SG_33-2 @WangCai_1
-      - US_160
-      - Relay_-🇨🇦CA_20
+      - Relay_🇺🇸US-🇺🇸US_143
+      - Relay_🇬🇧GB-🇬🇧GB_455
+      - 美国
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_57
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_58
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_81
+      - CYL-科技（2022.01.11） 5
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_66
+      - 華人社區_經紀人CC🌸🌸_172
+      - LAX-IT7
+      - Amsterdam-Fiber
+      - LAX-IT7 2
+      - HK(Youtube技术分享室整理) 8
+      - 華人社區_經紀人CC🌸🌸_202
+      - lv-默认,速度看天
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_69
+      - 美国 126
+      - CYL-科技（2022.01.11） 6
+      - 美国 127
+      - 美国 138
+      - 華人社區_經紀人CC🌸🌸_187
+      - "|24.09Mb"
+      - US_1525
+      - 美国2
+      - 華人社區_經紀人CC🌸🌸_203
+      - CYL-科技（2022.01.11） 7
+      - 華人社區_經紀人CC🌸🌸_202 2
+      - RO_127
       - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_66
+      - Amsterdam-Fiber 2
+      - 華人社區_經紀人CC🌸🌸_234
+      - -美国-104.22.44.50
+      - a 38
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_99
+      - Osaka-IT7
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_35
+      - 華人社區_經紀人CC🌸🌸_532
+      - lv-移动优选v4
+      - 華人社區_經紀人CC🌸🌸_187 2
+      - 華人社區_經紀人CC🌸🌸_193
+      - 美国 058
+      - 美国 058 2
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
+      - 169.197.142.39:3389
+      - 美国 137
+      - 華人社區_經紀人CC🌸🌸_225
+      - 37.120.137.82:8389
+      - 美国[感谢订阅——科技网络] 6
+      - CYL-科技（2022.01.11） 8
+      - _美国_<电报+YouTube：VV科技>_28
+      - US_1388
+      - IL_108 TG@peekfun
+      - Te 2
+      - ZZ_232
+      - RU_169 TG@peekfun
+      - _CN_中国_7
+      - Pool_🇺🇸US_222
+      - 美国 2
+      - 41新加坡
+      - 26英国
+      - US_1641
+      - ZZ_2194
+      - ZZ_2199
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_33
+      - US_172 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_160
+      - 37.120.212.162:8389
+      - CYL-科技（2022.01.11） 9
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x 2
+      - -美国-104.16.16.255
+      - CYL-科技（2022.01.11） 10
+      - US_185
+      - "| 9.79Mb"
+      - 183韩国_61
+      - Relay_🇺🇸US-🇺🇸US_2056
+      - ZZ_2207
+      - ZZ_2209
+      - ZZ_2208
+      - 華人社區_經紀人CC🌸🌸_188
+      - _美国_(YouTube：VV科技) TG：t.me/vvkj11_95
+      - ZZ_241
+      - RO_112 TG@peekfun
+      - CYL-科技（2022.01.11） 11
+      - _US_美国 2
+      - 華人社區_經紀人CC🌸🌸_561
+      - US_162
+      - CYL-科技（2022.01.11） 12
+      - CYL-科技（2022.01.11） 13
+      - ZZ_231
+      - 華人社區_經紀人CC🌸🌸_228
+      - Alien
+      - ZZ_208 TG@peekfun
+      - CYL-科技（2022.01.11） 14
+      - "|78.42Mb"
+      - _保加利亚_(YouTube：VV科技) TG：t.me/vvkj11_101
+      - RO_116 TG@peekfun
+      - "[01-04]-🇷🇴-罗马尼亚-2266-62.216.92.179"
+      - 華人社區_經紀人CC🌸🌸_194
+      - NL_134
+      - ZZ_215 TG@peekfun
+      - _US_美国 15
+      - GB_97 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_163
+      - 華人社區_經紀人CC🌸🌸_197
+      - US_192
+      - CYL-科技（2022.01.11） 15
+      - CYL-科技（2022.01.11） 16
+      - _US_美国 6
+      - 169.197.142.39:9101
+      - RU_143 TG@peekfun
+      - BG_26 TG@peekfun
+      - HU_105 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_196
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾
-      - 【VIP1】香港HK 04
-      - 【VIP1】香港HK 01_9
-      - 【VIP1】香港HK 03
-      - 【VIP1】香港HK 02
-      - 【VIP1】香港HK 04_12
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -747,286 +701,270 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 印度阿伟科技-油管
-      - 台湾
-      - 【VIP2】美国UA 04_22
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_73
-      - NL_131
-      - NL_134
-      - 【VIP1】日本JP 04
-      - RO_791
-      - 【VIP2】新加坡SG 01_13
-      - _中国跳转_（欢迎订阅YouTube：VV科技）_80
-      - "|19.27Mb"
-      - Relay_-🇨🇦CA_21
-      - US_1523
-      - 【VIP1】香港HK 04
-      - CYL-科技（2022.01.09）_9
-      - 美国[感谢订阅——科技网络]
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_148
+      - Relay_🇺🇸US-🇺🇸US_1722
+      - _日本_<YouTube：VV科技>+<TG：t.me/vvkj11>_25
+      - 華人社區_經紀人CC🌸🌸_384
+      - CYL-科技（2022.01.11）
+      - US_1993
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_139
+      - CYL-科技（2022.01.11） 2
+      - 37.120.136.234:8389
+      - CYL-科技（2022.01.11） 3
+      - _瑞典_<YouTube：VV科技>+<TG：t.me/vvkj11>_149
+      - CYL-科技（2022.01.11） 4
       - _US_美国
-      - US_1680
-      - 【VIP1】香港HK 01_9
-      - Relay_🇨🇳CN-🇹🇼TW_279
-      - 中国_TG@nodesharing_803
-      - 美国阿伟科技-油管
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_9
-      - 【VIP2】美国UA 03
-      - Ytb:鹏哥分享_NL_荷兰_21
-      - Relay_🇺🇸US-🇺🇸US_143
-      - _US_美国 2
-      - 美国阿伟科技-油管 2
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_65
-      - _US_美国 3
-      - _83
-      - 【VIP1】香港HK 03
-      - 美国 4_63
-      - 美国绿头外网集团Public_270
-      - US_156
-      - a 38
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_79
-      - US_1994 |81.26Mb
-      - US_1721
-      - US_150
-      - US_1696
-      - 俄罗斯阿伟科技-油管
-      - -美国-c23s3.jamjams.net_223
-      - CYL-科技（2022.01.09）_17
-      - 美国 126
-      - 華人社區_經紀人CC🌸🌸_194
-      - default_name
-      - US_1690
-      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
-      - 華人社區_經紀人CC🌸🌸_203
-      - US_166
-      - Ytb:鹏哥分享_HU_匈牙利_5
-      - US_191
-      - US_190 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_202
-      - US_1981 |44.09Mb
-      - US_1654
-      - 167.88.61.60:3306
-      - _US_美国 4
-      - ZZ_233
-      - US_169 TG@peekfun
-      - US_172 TG@peekfun
-      - Ytb:鹏哥分享_HU_匈牙利_4
-      - ZZ_2218
-      - _US_美国 5
-      - ZZ_2190
-      - US_180 TG@peekfun
-      - US_1698
-      - ZZ_232
-      - ZZ_247
-      - ZZ_217 TG@peekfun
-      - US_182
-      - CYL-科技（2022.01.09）_31
-      - US_1666
-      - 美国 103
-      - "| 9.79Mb"
-      - ZZ_2199
-      - ZZ_2209
-      - US_153 TG@peekfun
-      - 38.75.136.93:443
-      - US_184 TG@peekfun
-      - ZZ_231
-      - US_176 TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_160
-      - 美国 137
-      - 38.75.136.93:8080
-      - US_1524
-      - 美国 058
-      - Relay_🇺🇸US-🇺🇸US_1210
-      - AU_20 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_532
-      - FR_92 TG@peekfun
-      - 美国 127
-      - US_186 TG@peekfun
-      - 37.120.137.82:8389
-      - US_156 TG@peekfun
-      - 【VIP1】香港HK 02
-      - 172.105.180.227:5001
-      - US_180
-      - US_1156
-      - US_181 TG@peekfun
-      - US_185 TG@peekfun
-      - US_177 TG@peekfun
-      - _US_美国 6
-      - _US_美国 7
-      - AU_19 TG@peekfun
-      - US_185
-      - Relay_🇱🇺LU-🇩🇪DE_107
-      - US_154
-      - :美国-ss-38.143.66.71:2376-可用-直连-仅支持美国地区NF自制剧
-      - 【VIP1】香港HK 04_12
-      - US_1641
-      - 169.197.142.39:6379
-      - 華人社區_經紀人CC🌸🌸_188
-      - 美国[感谢订阅——科技网络] 6
-      - US_144
-      - ZZ_236
-      - US_1526
-      - US_192
-      - NL_607
-      - _US_美国 8
-      - 美国[感谢订阅——科技网络] 2
       - 22
-      - US_1670
-      - US(Youtube技术分享室整理)
-      - 小熙机场节点
-      - _US_美国 9
-      - Relay_-🇨🇦CA_15
-      - ZZ_242
-      - ZZ_208 TG@peekfun
-      - 107.167.23.50:8084
-      - _美国_(YouTube：VV科技)+（TG：t.me/vvkj11）_110
-      - Relay_🇺🇸US-🇺🇸US_159
-      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_23
-      - SG_33-2 @WangCai_1
-      - US_160
-      - Relay_-🇨🇦CA_20
+      - Relay_🇺🇸US-🇺🇸US_143
+      - Relay_🇬🇧GB-🇬🇧GB_455
+      - 美国
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_57
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_58
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_81
+      - CYL-科技（2022.01.11） 5
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_66
+      - 華人社區_經紀人CC🌸🌸_172
+      - LAX-IT7
+      - Amsterdam-Fiber
+      - LAX-IT7 2
+      - HK(Youtube技术分享室整理) 8
+      - 華人社區_經紀人CC🌸🌸_202
+      - lv-默认,速度看天
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_69
+      - 美国 126
+      - CYL-科技（2022.01.11） 6
+      - 美国 127
+      - 美国 138
+      - 華人社區_經紀人CC🌸🌸_187
+      - "|24.09Mb"
+      - US_1525
+      - 美国2
+      - 華人社區_經紀人CC🌸🌸_203
+      - CYL-科技（2022.01.11） 7
+      - 華人社區_經紀人CC🌸🌸_202 2
+      - RO_127
       - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_66
+      - Amsterdam-Fiber 2
+      - 華人社區_經紀人CC🌸🌸_234
+      - -美国-104.22.44.50
+      - a 38
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_99
+      - Osaka-IT7
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_35
+      - 華人社區_經紀人CC🌸🌸_532
+      - lv-移动优选v4
+      - 華人社區_經紀人CC🌸🌸_187 2
+      - 華人社區_經紀人CC🌸🌸_193
+      - 美国 058
+      - 美国 058 2
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
+      - 169.197.142.39:3389
+      - 美国 137
+      - 華人社區_經紀人CC🌸🌸_225
+      - 37.120.137.82:8389
+      - 美国[感谢订阅——科技网络] 6
+      - CYL-科技（2022.01.11） 8
+      - _美国_<电报+YouTube：VV科技>_28
+      - US_1388
+      - IL_108 TG@peekfun
+      - Te 2
+      - ZZ_232
+      - RU_169 TG@peekfun
+      - _CN_中国_7
+      - Pool_🇺🇸US_222
+      - 美国 2
+      - 41新加坡
+      - 26英国
+      - US_1641
+      - ZZ_2194
+      - ZZ_2199
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_33
+      - US_172 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_160
+      - 37.120.212.162:8389
+      - CYL-科技（2022.01.11） 9
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x 2
+      - -美国-104.16.16.255
+      - CYL-科技（2022.01.11） 10
+      - US_185
+      - "| 9.79Mb"
+      - 183韩国_61
+      - Relay_🇺🇸US-🇺🇸US_2056
+      - ZZ_2207
+      - ZZ_2209
+      - ZZ_2208
+      - 華人社區_經紀人CC🌸🌸_188
+      - _美国_(YouTube：VV科技) TG：t.me/vvkj11_95
+      - ZZ_241
+      - RO_112 TG@peekfun
+      - CYL-科技（2022.01.11） 11
+      - _US_美国 2
+      - 華人社區_經紀人CC🌸🌸_561
+      - US_162
+      - CYL-科技（2022.01.11） 12
+      - CYL-科技（2022.01.11） 13
+      - ZZ_231
+      - 華人社區_經紀人CC🌸🌸_228
+      - Alien
+      - ZZ_208 TG@peekfun
+      - CYL-科技（2022.01.11） 14
+      - "|78.42Mb"
+      - _保加利亚_(YouTube：VV科技) TG：t.me/vvkj11_101
+      - RO_116 TG@peekfun
+      - "[01-04]-🇷🇴-罗马尼亚-2266-62.216.92.179"
+      - 華人社區_經紀人CC🌸🌸_194
+      - NL_134
+      - ZZ_215 TG@peekfun
+      - _US_美国 15
+      - GB_97 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_163
+      - 華人社區_經紀人CC🌸🌸_197
+      - US_192
+      - CYL-科技（2022.01.11） 15
+      - CYL-科技（2022.01.11） 16
+      - _US_美国 6
+      - 169.197.142.39:9101
+      - RU_143 TG@peekfun
+      - BG_26 TG@peekfun
+      - HU_105 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_196
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 印度阿伟科技-油管
-      - 台湾
-      - 【VIP2】美国UA 04_22
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_73
-      - NL_131
-      - NL_134
-      - 【VIP1】日本JP 04
-      - RO_791
-      - 【VIP2】新加坡SG 01_13
-      - _中国跳转_（欢迎订阅YouTube：VV科技）_80
-      - "|19.27Mb"
-      - Relay_-🇨🇦CA_21
-      - US_1523
-      - 【VIP1】香港HK 04
-      - CYL-科技（2022.01.09）_9
-      - 美国[感谢订阅——科技网络]
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_148
+      - Relay_🇺🇸US-🇺🇸US_1722
+      - _日本_<YouTube：VV科技>+<TG：t.me/vvkj11>_25
+      - 華人社區_經紀人CC🌸🌸_384
+      - CYL-科技（2022.01.11）
+      - US_1993
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_139
+      - CYL-科技（2022.01.11） 2
+      - 37.120.136.234:8389
+      - CYL-科技（2022.01.11） 3
+      - _瑞典_<YouTube：VV科技>+<TG：t.me/vvkj11>_149
+      - CYL-科技（2022.01.11） 4
       - _US_美国
-      - US_1680
-      - 【VIP1】香港HK 01_9
-      - Relay_🇨🇳CN-🇹🇼TW_279
-      - 中国_TG@nodesharing_803
-      - 美国阿伟科技-油管
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_9
-      - 【VIP2】美国UA 03
-      - Ytb:鹏哥分享_NL_荷兰_21
-      - Relay_🇺🇸US-🇺🇸US_143
-      - _US_美国 2
-      - 美国阿伟科技-油管 2
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_65
-      - _US_美国 3
-      - _83
-      - 【VIP1】香港HK 03
-      - 美国 4_63
-      - 美国绿头外网集团Public_270
-      - US_156
-      - a 38
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_79
-      - US_1994 |81.26Mb
-      - US_1721
-      - US_150
-      - US_1696
-      - 俄罗斯阿伟科技-油管
-      - -美国-c23s3.jamjams.net_223
-      - CYL-科技（2022.01.09）_17
-      - 美国 126
-      - 華人社區_經紀人CC🌸🌸_194
-      - default_name
-      - US_1690
-      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
-      - 華人社區_經紀人CC🌸🌸_203
-      - US_166
-      - Ytb:鹏哥分享_HU_匈牙利_5
-      - US_191
-      - US_190 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_202
-      - US_1981 |44.09Mb
-      - US_1654
-      - 167.88.61.60:3306
-      - _US_美国 4
-      - ZZ_233
-      - US_169 TG@peekfun
-      - US_172 TG@peekfun
-      - Ytb:鹏哥分享_HU_匈牙利_4
-      - ZZ_2218
-      - _US_美国 5
-      - ZZ_2190
-      - US_180 TG@peekfun
-      - US_1698
-      - ZZ_232
-      - ZZ_247
-      - ZZ_217 TG@peekfun
-      - US_182
-      - CYL-科技（2022.01.09）_31
-      - US_1666
-      - 美国 103
-      - "| 9.79Mb"
-      - ZZ_2199
-      - ZZ_2209
-      - US_153 TG@peekfun
-      - 38.75.136.93:443
-      - US_184 TG@peekfun
-      - ZZ_231
-      - US_176 TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_160
-      - 美国 137
-      - 38.75.136.93:8080
-      - US_1524
-      - 美国 058
-      - Relay_🇺🇸US-🇺🇸US_1210
-      - AU_20 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_532
-      - FR_92 TG@peekfun
-      - 美国 127
-      - US_186 TG@peekfun
-      - 37.120.137.82:8389
-      - US_156 TG@peekfun
-      - 【VIP1】香港HK 02
-      - 172.105.180.227:5001
-      - US_180
-      - US_1156
-      - US_181 TG@peekfun
-      - US_185 TG@peekfun
-      - US_177 TG@peekfun
-      - _US_美国 6
-      - _US_美国 7
-      - AU_19 TG@peekfun
-      - US_185
-      - Relay_🇱🇺LU-🇩🇪DE_107
-      - US_154
-      - :美国-ss-38.143.66.71:2376-可用-直连-仅支持美国地区NF自制剧
-      - 【VIP1】香港HK 04_12
-      - US_1641
-      - 169.197.142.39:6379
-      - 華人社區_經紀人CC🌸🌸_188
-      - 美国[感谢订阅——科技网络] 6
-      - US_144
-      - ZZ_236
-      - US_1526
-      - US_192
-      - NL_607
-      - _US_美国 8
-      - 美国[感谢订阅——科技网络] 2
       - 22
-      - US_1670
-      - US(Youtube技术分享室整理)
-      - 小熙机场节点
-      - _US_美国 9
-      - Relay_-🇨🇦CA_15
-      - ZZ_242
-      - ZZ_208 TG@peekfun
-      - 107.167.23.50:8084
-      - _美国_(YouTube：VV科技)+（TG：t.me/vvkj11）_110
-      - Relay_🇺🇸US-🇺🇸US_159
-      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_23
-      - SG_33-2 @WangCai_1
-      - US_160
-      - Relay_-🇨🇦CA_20
+      - Relay_🇺🇸US-🇺🇸US_143
+      - Relay_🇬🇧GB-🇬🇧GB_455
+      - 美国
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_57
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_58
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_81
+      - CYL-科技（2022.01.11） 5
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_66
+      - 華人社區_經紀人CC🌸🌸_172
+      - LAX-IT7
+      - Amsterdam-Fiber
+      - LAX-IT7 2
+      - HK(Youtube技术分享室整理) 8
+      - 華人社區_經紀人CC🌸🌸_202
+      - lv-默认,速度看天
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_69
+      - 美国 126
+      - CYL-科技（2022.01.11） 6
+      - 美国 127
+      - 美国 138
+      - 華人社區_經紀人CC🌸🌸_187
+      - "|24.09Mb"
+      - US_1525
+      - 美国2
+      - 華人社區_經紀人CC🌸🌸_203
+      - CYL-科技（2022.01.11） 7
+      - 華人社區_經紀人CC🌸🌸_202 2
+      - RO_127
       - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_66
+      - Amsterdam-Fiber 2
+      - 華人社區_經紀人CC🌸🌸_234
+      - -美国-104.22.44.50
+      - a 38
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_99
+      - Osaka-IT7
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_35
+      - 華人社區_經紀人CC🌸🌸_532
+      - lv-移动优选v4
+      - 華人社區_經紀人CC🌸🌸_187 2
+      - 華人社區_經紀人CC🌸🌸_193
+      - 美国 058
+      - 美国 058 2
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
+      - 169.197.142.39:3389
+      - 美国 137
+      - 華人社區_經紀人CC🌸🌸_225
+      - 37.120.137.82:8389
+      - 美国[感谢订阅——科技网络] 6
+      - CYL-科技（2022.01.11） 8
+      - _美国_<电报+YouTube：VV科技>_28
+      - US_1388
+      - IL_108 TG@peekfun
+      - Te 2
+      - ZZ_232
+      - RU_169 TG@peekfun
+      - _CN_中国_7
+      - Pool_🇺🇸US_222
+      - 美国 2
+      - 41新加坡
+      - 26英国
+      - US_1641
+      - ZZ_2194
+      - ZZ_2199
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_33
+      - US_172 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_160
+      - 37.120.212.162:8389
+      - CYL-科技（2022.01.11） 9
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x 2
+      - -美国-104.16.16.255
+      - CYL-科技（2022.01.11） 10
+      - US_185
+      - "| 9.79Mb"
+      - 183韩国_61
+      - Relay_🇺🇸US-🇺🇸US_2056
+      - ZZ_2207
+      - ZZ_2209
+      - ZZ_2208
+      - 華人社區_經紀人CC🌸🌸_188
+      - _美国_(YouTube：VV科技) TG：t.me/vvkj11_95
+      - ZZ_241
+      - RO_112 TG@peekfun
+      - CYL-科技（2022.01.11） 11
+      - _US_美国 2
+      - 華人社區_經紀人CC🌸🌸_561
+      - US_162
+      - CYL-科技（2022.01.11） 12
+      - CYL-科技（2022.01.11） 13
+      - ZZ_231
+      - 華人社區_經紀人CC🌸🌸_228
+      - Alien
+      - ZZ_208 TG@peekfun
+      - CYL-科技（2022.01.11） 14
+      - "|78.42Mb"
+      - _保加利亚_(YouTube：VV科技) TG：t.me/vvkj11_101
+      - RO_116 TG@peekfun
+      - "[01-04]-🇷🇴-罗马尼亚-2266-62.216.92.179"
+      - 華人社區_經紀人CC🌸🌸_194
+      - NL_134
+      - ZZ_215 TG@peekfun
+      - _US_美国 15
+      - GB_97 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_163
+      - 華人社區_經紀人CC🌸🌸_197
+      - US_192
+      - CYL-科技（2022.01.11） 15
+      - CYL-科技（2022.01.11） 16
+      - _US_美国 6
+      - 169.197.142.39:9101
+      - RU_143 TG@peekfun
+      - BG_26 TG@peekfun
+      - HU_105 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_196
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -1034,143 +972,135 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 印度阿伟科技-油管
-      - 台湾
-      - 【VIP2】美国UA 04_22
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_73
-      - NL_131
-      - NL_134
-      - 【VIP1】日本JP 04
-      - RO_791
-      - 【VIP2】新加坡SG 01_13
-      - _中国跳转_（欢迎订阅YouTube：VV科技）_80
-      - "|19.27Mb"
-      - Relay_-🇨🇦CA_21
-      - US_1523
-      - 【VIP1】香港HK 04
-      - CYL-科技（2022.01.09）_9
-      - 美国[感谢订阅——科技网络]
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_148
+      - Relay_🇺🇸US-🇺🇸US_1722
+      - _日本_<YouTube：VV科技>+<TG：t.me/vvkj11>_25
+      - 華人社區_經紀人CC🌸🌸_384
+      - CYL-科技（2022.01.11）
+      - US_1993
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_139
+      - CYL-科技（2022.01.11） 2
+      - 37.120.136.234:8389
+      - CYL-科技（2022.01.11） 3
+      - _瑞典_<YouTube：VV科技>+<TG：t.me/vvkj11>_149
+      - CYL-科技（2022.01.11） 4
       - _US_美国
-      - US_1680
-      - 【VIP1】香港HK 01_9
-      - Relay_🇨🇳CN-🇹🇼TW_279
-      - 中国_TG@nodesharing_803
-      - 美国阿伟科技-油管
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_9
-      - 【VIP2】美国UA 03
-      - Ytb:鹏哥分享_NL_荷兰_21
-      - Relay_🇺🇸US-🇺🇸US_143
-      - _US_美国 2
-      - 美国阿伟科技-油管 2
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_65
-      - _US_美国 3
-      - _83
-      - 【VIP1】香港HK 03
-      - 美国 4_63
-      - 美国绿头外网集团Public_270
-      - US_156
-      - a 38
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_79
-      - US_1994 |81.26Mb
-      - US_1721
-      - US_150
-      - US_1696
-      - 俄罗斯阿伟科技-油管
-      - -美国-c23s3.jamjams.net_223
-      - CYL-科技（2022.01.09）_17
-      - 美国 126
-      - 華人社區_經紀人CC🌸🌸_194
-      - default_name
-      - US_1690
-      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
-      - 華人社區_經紀人CC🌸🌸_203
-      - US_166
-      - Ytb:鹏哥分享_HU_匈牙利_5
-      - US_191
-      - US_190 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_202
-      - US_1981 |44.09Mb
-      - US_1654
-      - 167.88.61.60:3306
-      - _US_美国 4
-      - ZZ_233
-      - US_169 TG@peekfun
-      - US_172 TG@peekfun
-      - Ytb:鹏哥分享_HU_匈牙利_4
-      - ZZ_2218
-      - _US_美国 5
-      - ZZ_2190
-      - US_180 TG@peekfun
-      - US_1698
-      - ZZ_232
-      - ZZ_247
-      - ZZ_217 TG@peekfun
-      - US_182
-      - CYL-科技（2022.01.09）_31
-      - US_1666
-      - 美国 103
-      - "| 9.79Mb"
-      - ZZ_2199
-      - ZZ_2209
-      - US_153 TG@peekfun
-      - 38.75.136.93:443
-      - US_184 TG@peekfun
-      - ZZ_231
-      - US_176 TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_160
-      - 美国 137
-      - 38.75.136.93:8080
-      - US_1524
-      - 美国 058
-      - Relay_🇺🇸US-🇺🇸US_1210
-      - AU_20 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_532
-      - FR_92 TG@peekfun
-      - 美国 127
-      - US_186 TG@peekfun
-      - 37.120.137.82:8389
-      - US_156 TG@peekfun
-      - 【VIP1】香港HK 02
-      - 172.105.180.227:5001
-      - US_180
-      - US_1156
-      - US_181 TG@peekfun
-      - US_185 TG@peekfun
-      - US_177 TG@peekfun
-      - _US_美国 6
-      - _US_美国 7
-      - AU_19 TG@peekfun
-      - US_185
-      - Relay_🇱🇺LU-🇩🇪DE_107
-      - US_154
-      - :美国-ss-38.143.66.71:2376-可用-直连-仅支持美国地区NF自制剧
-      - 【VIP1】香港HK 04_12
-      - US_1641
-      - 169.197.142.39:6379
-      - 華人社區_經紀人CC🌸🌸_188
-      - 美国[感谢订阅——科技网络] 6
-      - US_144
-      - ZZ_236
-      - US_1526
-      - US_192
-      - NL_607
-      - _US_美国 8
-      - 美国[感谢订阅——科技网络] 2
       - 22
-      - US_1670
-      - US(Youtube技术分享室整理)
-      - 小熙机场节点
-      - _US_美国 9
-      - Relay_-🇨🇦CA_15
-      - ZZ_242
-      - ZZ_208 TG@peekfun
-      - 107.167.23.50:8084
-      - _美国_(YouTube：VV科技)+（TG：t.me/vvkj11）_110
-      - Relay_🇺🇸US-🇺🇸US_159
-      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_23
-      - SG_33-2 @WangCai_1
-      - US_160
-      - Relay_-🇨🇦CA_20
+      - Relay_🇺🇸US-🇺🇸US_143
+      - Relay_🇬🇧GB-🇬🇧GB_455
+      - 美国
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_57
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_58
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_81
+      - CYL-科技（2022.01.11） 5
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_66
+      - 華人社區_經紀人CC🌸🌸_172
+      - LAX-IT7
+      - Amsterdam-Fiber
+      - LAX-IT7 2
+      - HK(Youtube技术分享室整理) 8
+      - 華人社區_經紀人CC🌸🌸_202
+      - lv-默认,速度看天
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_69
+      - 美国 126
+      - CYL-科技（2022.01.11） 6
+      - 美国 127
+      - 美国 138
+      - 華人社區_經紀人CC🌸🌸_187
+      - "|24.09Mb"
+      - US_1525
+      - 美国2
+      - 華人社區_經紀人CC🌸🌸_203
+      - CYL-科技（2022.01.11） 7
+      - 華人社區_經紀人CC🌸🌸_202 2
+      - RO_127
       - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_66
+      - Amsterdam-Fiber 2
+      - 華人社區_經紀人CC🌸🌸_234
+      - -美国-104.22.44.50
+      - a 38
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_99
+      - Osaka-IT7
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_35
+      - 華人社區_經紀人CC🌸🌸_532
+      - lv-移动优选v4
+      - 華人社區_經紀人CC🌸🌸_187 2
+      - 華人社區_經紀人CC🌸🌸_193
+      - 美国 058
+      - 美国 058 2
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
+      - 169.197.142.39:3389
+      - 美国 137
+      - 華人社區_經紀人CC🌸🌸_225
+      - 37.120.137.82:8389
+      - 美国[感谢订阅——科技网络] 6
+      - CYL-科技（2022.01.11） 8
+      - _美国_<电报+YouTube：VV科技>_28
+      - US_1388
+      - IL_108 TG@peekfun
+      - Te 2
+      - ZZ_232
+      - RU_169 TG@peekfun
+      - _CN_中国_7
+      - Pool_🇺🇸US_222
+      - 美国 2
+      - 41新加坡
+      - 26英国
+      - US_1641
+      - ZZ_2194
+      - ZZ_2199
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_33
+      - US_172 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_160
+      - 37.120.212.162:8389
+      - CYL-科技（2022.01.11） 9
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x 2
+      - -美国-104.16.16.255
+      - CYL-科技（2022.01.11） 10
+      - US_185
+      - "| 9.79Mb"
+      - 183韩国_61
+      - Relay_🇺🇸US-🇺🇸US_2056
+      - ZZ_2207
+      - ZZ_2209
+      - ZZ_2208
+      - 華人社區_經紀人CC🌸🌸_188
+      - _美国_(YouTube：VV科技) TG：t.me/vvkj11_95
+      - ZZ_241
+      - RO_112 TG@peekfun
+      - CYL-科技（2022.01.11） 11
+      - _US_美国 2
+      - 華人社區_經紀人CC🌸🌸_561
+      - US_162
+      - CYL-科技（2022.01.11） 12
+      - CYL-科技（2022.01.11） 13
+      - ZZ_231
+      - 華人社區_經紀人CC🌸🌸_228
+      - Alien
+      - ZZ_208 TG@peekfun
+      - CYL-科技（2022.01.11） 14
+      - "|78.42Mb"
+      - _保加利亚_(YouTube：VV科技) TG：t.me/vvkj11_101
+      - RO_116 TG@peekfun
+      - "[01-04]-🇷🇴-罗马尼亚-2266-62.216.92.179"
+      - 華人社區_經紀人CC🌸🌸_194
+      - NL_134
+      - ZZ_215 TG@peekfun
+      - _US_美国 15
+      - GB_97 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_163
+      - 華人社區_經紀人CC🌸🌸_197
+      - US_192
+      - CYL-科技（2022.01.11） 15
+      - CYL-科技（2022.01.11） 16
+      - _US_美国 6
+      - 169.197.142.39:9101
+      - RU_143 TG@peekfun
+      - BG_26 TG@peekfun
+      - HU_105 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_196
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1187,143 +1117,135 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 印度阿伟科技-油管
-      - 台湾
-      - 【VIP2】美国UA 04_22
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_73
-      - NL_131
-      - NL_134
-      - 【VIP1】日本JP 04
-      - RO_791
-      - 【VIP2】新加坡SG 01_13
-      - _中国跳转_（欢迎订阅YouTube：VV科技）_80
-      - "|19.27Mb"
-      - Relay_-🇨🇦CA_21
-      - US_1523
-      - 【VIP1】香港HK 04
-      - CYL-科技（2022.01.09）_9
-      - 美国[感谢订阅——科技网络]
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_148
+      - Relay_🇺🇸US-🇺🇸US_1722
+      - _日本_<YouTube：VV科技>+<TG：t.me/vvkj11>_25
+      - 華人社區_經紀人CC🌸🌸_384
+      - CYL-科技（2022.01.11）
+      - US_1993
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_139
+      - CYL-科技（2022.01.11） 2
+      - 37.120.136.234:8389
+      - CYL-科技（2022.01.11） 3
+      - _瑞典_<YouTube：VV科技>+<TG：t.me/vvkj11>_149
+      - CYL-科技（2022.01.11） 4
       - _US_美国
-      - US_1680
-      - 【VIP1】香港HK 01_9
-      - Relay_🇨🇳CN-🇹🇼TW_279
-      - 中国_TG@nodesharing_803
-      - 美国阿伟科技-油管
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_9
-      - 【VIP2】美国UA 03
-      - Ytb:鹏哥分享_NL_荷兰_21
-      - Relay_🇺🇸US-🇺🇸US_143
-      - _US_美国 2
-      - 美国阿伟科技-油管 2
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_65
-      - _US_美国 3
-      - _83
-      - 【VIP1】香港HK 03
-      - 美国 4_63
-      - 美国绿头外网集团Public_270
-      - US_156
-      - a 38
-      - _美国_(YouTube：VV科技)+TG：t.me/vvkj11_79
-      - US_1994 |81.26Mb
-      - US_1721
-      - US_150
-      - US_1696
-      - 俄罗斯阿伟科技-油管
-      - -美国-c23s3.jamjams.net_223
-      - CYL-科技（2022.01.09）_17
-      - 美国 126
-      - 華人社區_經紀人CC🌸🌸_194
-      - default_name
-      - US_1690
-      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
-      - 華人社區_經紀人CC🌸🌸_203
-      - US_166
-      - Ytb:鹏哥分享_HU_匈牙利_5
-      - US_191
-      - US_190 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_202
-      - US_1981 |44.09Mb
-      - US_1654
-      - 167.88.61.60:3306
-      - _US_美国 4
-      - ZZ_233
-      - US_169 TG@peekfun
-      - US_172 TG@peekfun
-      - Ytb:鹏哥分享_HU_匈牙利_4
-      - ZZ_2218
-      - _US_美国 5
-      - ZZ_2190
-      - US_180 TG@peekfun
-      - US_1698
-      - ZZ_232
-      - ZZ_247
-      - ZZ_217 TG@peekfun
-      - US_182
-      - CYL-科技（2022.01.09）_31
-      - US_1666
-      - 美国 103
-      - "| 9.79Mb"
-      - ZZ_2199
-      - ZZ_2209
-      - US_153 TG@peekfun
-      - 38.75.136.93:443
-      - US_184 TG@peekfun
-      - ZZ_231
-      - US_176 TG@peekfun
-      - Relay_🇺🇸US-🇺🇸US_160
-      - 美国 137
-      - 38.75.136.93:8080
-      - US_1524
-      - 美国 058
-      - Relay_🇺🇸US-🇺🇸US_1210
-      - AU_20 TG@peekfun
-      - 華人社區_經紀人CC🌸🌸_532
-      - FR_92 TG@peekfun
-      - 美国 127
-      - US_186 TG@peekfun
-      - 37.120.137.82:8389
-      - US_156 TG@peekfun
-      - 【VIP1】香港HK 02
-      - 172.105.180.227:5001
-      - US_180
-      - US_1156
-      - US_181 TG@peekfun
-      - US_185 TG@peekfun
-      - US_177 TG@peekfun
-      - _US_美国 6
-      - _US_美国 7
-      - AU_19 TG@peekfun
-      - US_185
-      - Relay_🇱🇺LU-🇩🇪DE_107
-      - US_154
-      - :美国-ss-38.143.66.71:2376-可用-直连-仅支持美国地区NF自制剧
-      - 【VIP1】香港HK 04_12
-      - US_1641
-      - 169.197.142.39:6379
-      - 華人社區_經紀人CC🌸🌸_188
-      - 美国[感谢订阅——科技网络] 6
-      - US_144
-      - ZZ_236
-      - US_1526
-      - US_192
-      - NL_607
-      - _US_美国 8
-      - 美国[感谢订阅——科技网络] 2
       - 22
-      - US_1670
-      - US(Youtube技术分享室整理)
-      - 小熙机场节点
-      - _US_美国 9
-      - Relay_-🇨🇦CA_15
-      - ZZ_242
-      - ZZ_208 TG@peekfun
-      - 107.167.23.50:8084
-      - _美国_(YouTube：VV科技)+（TG：t.me/vvkj11）_110
-      - Relay_🇺🇸US-🇺🇸US_159
-      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_23
-      - SG_33-2 @WangCai_1
-      - US_160
-      - Relay_-🇨🇦CA_20
+      - Relay_🇺🇸US-🇺🇸US_143
+      - Relay_🇬🇧GB-🇬🇧GB_455
+      - 美国
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_57
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_58
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_81
+      - CYL-科技（2022.01.11） 5
+      - _荷兰_<YouTube：VV科技>+<TG：t.me/vvkj11>_66
+      - 華人社區_經紀人CC🌸🌸_172
+      - LAX-IT7
+      - Amsterdam-Fiber
+      - LAX-IT7 2
+      - HK(Youtube技术分享室整理) 8
+      - 華人社區_經紀人CC🌸🌸_202
+      - lv-默认,速度看天
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_69
+      - 美国 126
+      - CYL-科技（2022.01.11） 6
+      - 美国 127
+      - 美国 138
+      - 華人社區_經紀人CC🌸🌸_187
+      - "|24.09Mb"
+      - US_1525
+      - 美国2
+      - 華人社區_經紀人CC🌸🌸_203
+      - CYL-科技（2022.01.11） 7
+      - 華人社區_經紀人CC🌸🌸_202 2
+      - RO_127
       - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_66
+      - Amsterdam-Fiber 2
+      - 華人社區_經紀人CC🌸🌸_234
+      - -美国-104.22.44.50
+      - a 38
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_99
+      - Osaka-IT7
+      - _美国_<YouTube：VV科技>+<TG：t.me/vvkj11>_35
+      - 華人社區_經紀人CC🌸🌸_532
+      - lv-移动优选v4
+      - 華人社區_經紀人CC🌸🌸_187 2
+      - 華人社區_經紀人CC🌸🌸_193
+      - 美国 058
+      - 美国 058 2
+      - 美国🚀关注http://dwz.date/dUtE免费领取🚀MiDnight午夜 72
+      - 169.197.142.39:3389
+      - 美国 137
+      - 華人社區_經紀人CC🌸🌸_225
+      - 37.120.137.82:8389
+      - 美国[感谢订阅——科技网络] 6
+      - CYL-科技（2022.01.11） 8
+      - _美国_<电报+YouTube：VV科技>_28
+      - US_1388
+      - IL_108 TG@peekfun
+      - Te 2
+      - ZZ_232
+      - RU_169 TG@peekfun
+      - _CN_中国_7
+      - Pool_🇺🇸US_222
+      - 美国 2
+      - 41新加坡
+      - 26英国
+      - US_1641
+      - ZZ_2194
+      - ZZ_2199
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x
+      - ⭐️⭐️華人社區_YouTube梦歌⭐️⭐️_33
+      - US_172 TG@peekfun
+      - Relay_🇺🇸US-🇺🇸US_160
+      - 37.120.212.162:8389
+      - CYL-科技（2022.01.11） 9
+      - 【新鸟免费】美国UA -DO 07 免流 1.0x 2
+      - -美国-104.16.16.255
+      - CYL-科技（2022.01.11） 10
+      - US_185
+      - "| 9.79Mb"
+      - 183韩国_61
+      - Relay_🇺🇸US-🇺🇸US_2056
+      - ZZ_2207
+      - ZZ_2209
+      - ZZ_2208
+      - 華人社區_經紀人CC🌸🌸_188
+      - _美国_(YouTube：VV科技) TG：t.me/vvkj11_95
+      - ZZ_241
+      - RO_112 TG@peekfun
+      - CYL-科技（2022.01.11） 11
+      - _US_美国 2
+      - 華人社區_經紀人CC🌸🌸_561
+      - US_162
+      - CYL-科技（2022.01.11） 12
+      - CYL-科技（2022.01.11） 13
+      - ZZ_231
+      - 華人社區_經紀人CC🌸🌸_228
+      - Alien
+      - ZZ_208 TG@peekfun
+      - CYL-科技（2022.01.11） 14
+      - "|78.42Mb"
+      - _保加利亚_(YouTube：VV科技) TG：t.me/vvkj11_101
+      - RO_116 TG@peekfun
+      - "[01-04]-🇷🇴-罗马尼亚-2266-62.216.92.179"
+      - 華人社區_經紀人CC🌸🌸_194
+      - NL_134
+      - ZZ_215 TG@peekfun
+      - _US_美国 15
+      - GB_97 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_163
+      - 華人社區_經紀人CC🌸🌸_197
+      - US_192
+      - CYL-科技（2022.01.11） 15
+      - CYL-科技（2022.01.11） 16
+      - _US_美国 6
+      - 169.197.142.39:9101
+      - RU_143 TG@peekfun
+      - BG_26 TG@peekfun
+      - HU_105 TG@peekfun
+      - 華人社區_經紀人CC🌸🌸_196
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
